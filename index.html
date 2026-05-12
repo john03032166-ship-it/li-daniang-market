@@ -4,67 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>李大娘買菜網 | 專業行銷自動化系統</title>
+    <title>李大娘買菜網 | 專業生鮮自動化行銷系統</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
+    <!-- 導覽列 -->
+    <nav>
+        <div class="container nav-container">
+            <div class="logo">李大娘<span>買菜網</span></div>
+            <ul class="nav-links">
+                <li><a href="#about">關於大娘</a></li>
+                <li><a href="#mechanism">獨家機制</a></li>
+                <li><a href="#products">精選食材</a></li>
+                <li><a href="#faq">常見問題</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section / Lead Magnet -->
+    <header class="hero">
         <div class="container">
-            <h1>李大娘買菜網</h1>
-            <p>20年市場經驗，為您守護家人的餐桌鮮甜</p>
+            <div class="hero-content">
+                <span class="top-tag">20年市場職人經驗傳承</span>
+                <h1>告別超市「工業化」蔬菜</h1>
+                <p class="hero-subtext">別再讓家人的健康犧牲在「放不壞」的超市包裝菜上。我們將傳統市場的鮮甜與溫情，透過數位化流程精準送達。</p>
+                
+                <div class="optin-box" id="lead-magnet">
+                    <h3>🎁 限時獲取：大娘私藏選材秘籍</h3>
+                    <p>立即領取《傳統市場消失的秘密：10分鐘端出大廚級料理》，內含 3 招一眼辨識化學農藥技巧。</p>
+                    <form class="hero-form">
+                        <input type="text" placeholder="您的姓名" required>
+                        <input type="email" placeholder="您的電子郵件" required>
+                        <button type="submit">免費下載並領取 $100 折價券</button>
+                    </form>
+                    <p class="social-proof"><i class="fas fa-users"></i> 已有 5,200+ 位職業媽媽完成訂閱</p>
+                </div>
+            </div>
         </div>
     </header>
 
-    <section id="optin" class="section">
-        <div class="container card">
-            <div class="badge">限時免費</div>
-            <h2>告別超市「化學」蔬菜！</h2>
-            <p>立即領取《大廚級原味料理速成筆記》，教您一眼看穿市場選材秘密。</p>
-            <form class="optin-form">
-                <input type="email" placeholder="請輸入您的電子郵件" required>
-                <button type="submit">立即領取 & 領 $100 折價券</button>
-            </form>
-            <p class="small-print">* 已有 5,200+ 位職業媽媽下載。我們絕不發送垃圾郵件。</p>
+    <!-- 獨特機制區塊 (劉克亞風格) -->
+    <section id="mechanism" class="section bg-white">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">UNIQUE MECHANISM</span>
+                <h2>為什麼李大娘的菜「更有菜味」？</h2>
+                <p>揭開我們獨創的「產地垂直切割」物流邏輯</p>
+            </div>
+            <div class="mechanism-grid">
+                <div class="m-card">
+                    <div class="icon">03:00</div>
+                    <h4>產地直送採收</h4>
+                    <p>與小農建立直連協定，剔除中間商，在露水未散前完成採摘。</p>
+                </div>
+                <div class="m-card highlight">
+                    <div class="icon">08:00</div>
+                    <h4>大娘專業選品</h4>
+                    <p>由 20 年資歷的職人逐一檢查，只有前 10% 的極品能進入配送名單。</p>
+                </div>
+                <div class="m-card">
+                    <div class="icon">16:00</div>
+                    <h4>精準末端配送</h4>
+                    <p>全程冷鏈保護，下班回家，包裹即是晚餐的救星。</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="sales" class="container">
-        <div class="section-header">
-            <h2>針對不同 TA 的銷售策略展示</h2>
-        </div>
-
-        <!-- Style A -->
-        <div class="style-box style-a">
-            <span class="label">好友信任風格</span>
-            <h3>「阿美，大娘幫妳留了最鮮的！」</h3>
-            <p>就像鄰居阿姨，我們懂妳下班後的累。省下奔波，把時間留給最愛的家人。</p>
-            <ul>
-                <li>✓ 代勞市場排隊與搬運</li>
-                <li>✓ 像挑給孫子吃的一樣挑剔</li>
-            </ul>
-        </div>
-
-        <!-- Style B -->
-        <div class="style-box style-b">
-            <span class="label">劉克亞機制風格</span>
-            <h3>為什麼 90% 的人買到「低營養」過季食材？</h3>
-            <p>揭秘「零庫存、即時垂直切割」機制。03:00 採收，16:00 到家，鮮味不再流失。</p>
-            <div class="process">
-                <span>採收</span> → <span>親選</span> → <span>配送</span>
+    <!-- 產品展示區塊 (好友風格) -->
+    <section id="products" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>「大娘，今天有什麼好貨？」</h2>
+                <p>我們不只是賣菜，我們是為您全家挑選安心。</p>
+            </div>
+            <div class="product-grid">
+                <div class="p-item">
+                    <div class="p-img">手作水餃</div>
+                    <h3>招牌手工水餃</h3>
+                    <p>皮薄Q彈，豬肉產地證明，無任何人工增味劑。</p>
+                    <span class="price">$180 / 盒</span>
+                </div>
+                <div class="p-item">
+                    <div class="p-img">當季時蔬</div>
+                    <h3>有機鮮蔬組合</h3>
+                    <p>精選當季葉菜類，保證鮮嫩，不帶土、不殘留。</p>
+                    <span class="price">$399 / 組</span>
+                </div>
+                <div class="p-item">
+                    <div class="p-img">懶人熟食</div>
+                    <h3>大娘私房燉肉</h3>
+                    <p>傳統工法慢火細熬，解凍即食，忙碌日的首選。</p>
+                    <span class="price">$250 / 份</span>
+                </div>
             </div>
         </div>
+    </section>
 
-        <!-- Style C -->
-        <div class="style-box style-c">
-            <span class="label">Gary Halbert 強力直效</span>
-            <h3>拒絕漂白劑！如果妳不在乎健康，請關掉此頁。</h3>
-            <p>這不是普通的蔬菜，這是大娘對誠實的堅持。每日限量 50 份，守護家人刻不容緩。</p>
-            <button class="btn-primary">立即拒絕化學蔬菜</button>
+    <!-- 直效行銷區塊 (Gary Halbert 風格) -->
+    <section class="section killer-copy">
+        <div class="container narrow">
+            <div class="copy-box">
+                <h2 class="warning">如果您不在乎家人的健康，請立即離開！</h2>
+                <p>這聽起來很殘酷，但真相往往如此。超市裡那些漂亮、完美、放不壞的蔬菜，是透過多少化學藥劑維持的？當您餵孩子吃下那些「美得不正常」的食物時，您在交換什麼？</p>
+                <p>我是李大娘。我無法忍受這一切。我的網頁不賣漂亮的毒藥，我賣的是<strong>誠實與健康</strong>。如果您追求的是純粹的、原生的、有靈魂的食材，那麼請現在行動。</p>
+                <div class="urgency">今日配送名額僅剩 7 份。</div>
+                <a href="#" class="cta-large">我拒絕化學蔬菜，立即選購</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section bg-white">
+        <div class="container">
+            <h2 class="text-center">常見問題</h2>
+            <div class="faq-item">
+                <h4>Q: 免運費門檻是多少？</h4>
+                <p>A: 為了減輕您的負擔，我們提供全台最低門檻 $399 即享免運服務。</p>
+            </div>
+            <div class="faq-item">
+                <h4>Q: 蔬菜保證是有機的嗎？</h4>
+                <p>A: 我們與特定小農合作，雖然並非全部具有昂貴標章，但保證通過我們嚴格的藥檢與職人感官測試。</p>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>© 2026 李大娘買菜網 | 實踐自動化行銷系統</p>
+        <div class="container">
+            <p>© 2026 李大娘買菜網 | 自動化行銷系統實作</p>
+            <p>服務熱線：0800-XXX-XXX | 地址：台北市XX區市場路1號</p>
+        </div>
     </footer>
 </body>
 </html>
